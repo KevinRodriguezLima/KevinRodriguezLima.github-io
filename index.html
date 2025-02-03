@@ -6,14 +6,38 @@
     <title>Corazón Brillante</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="heart"></div>
         <p class="dedication">Para alguien muy especial 💖</p>
-        <div class="dedication-text">
-            <p>Querida Camila Jean 💘 Me dijiste que escribiera algo memorable, así que lo hice. Mi recuerdo de la primera vez que te vi o como tú lo llamas "nuestro bello hit(wild ya se)", fue en la asamblea de la marcha por la vida. Estabas parada enfrente y tu nombre estaba escrito en la pancarta, era la mejor pancarta, la catequista Naomi te llamó para recibir el premio y necesitabas alguien que te ayude a sostenerla y te ayudé a sostenerlo, y me sonreíste. El corazón me dio un salto en el pecho. No sabía que eso era posible. En ese entonces no tenía idea de que te convertirías en lo que eres: la persona más importante de mi vida. Algunas veces no puedo creer lo afortunado que soy de que me eligieras. Hemos pasado por muchas cosas juntos, Camila Jean. Nunca debí dudar de que superaríamos esto también. Pero me asusté y... te lastimé. Lo siento muchísimo. Claro que deberías ir a donde quieras, y hacer todo lo que quieras. No quiero detenerte. Quiero estar a tu lado. No siempre será fácil, pero quiero hacer lo necesario para que esto funcione, porque eso haces cuando amas a alguien. Además, si vamos a estar juntos para siempre, unas hit más no harán daño. Por favor, si estás de acuerdo, considera este nuestro nuevo contrato.</p>
-            <p>Te amaré siempre mi Camila Jean, ahora y por siempre. 💗</p>
+        
+        <!-- Sección de sobres -->
+        <div class="letters">
+            <div class="envelope" onclick="openLetter(this)">
+                <div class="flap"></div>
+                <div class="heart-seal"></div>
+                <div class="letter-content">💌 Mensaje de la carta 1.dasdas..</div>
+            </div>
+            <div class="envelope" onclick="openLetter(this)">
+                <div class="flap"></div>
+                <div class="heart-seal"></div>
+                <div class="letter-content">💌 Mensaje de la carta 2...</div>
+            </div>
+            <div class="envelope" onclick="openLetter(this)">
+                <div class="flap"></div>
+                <div class="heart-seal"></div>
+                <div class="letter-content">💌 Mensaje de la carta 3...</div>
+            </div>
         </div>
+        
+
+        <!-- Mensajes -->
+        <div class="letter-content" id="message1">💌 Mensaje de la carta 1.dasdas..</div>
+        <div class="letter-content" id="message2">💌 Mensaje de la carta 2...</div>
+        <div class="letter-content" id="message3">💌 Mensaje de la carta 3...</div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
