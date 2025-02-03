@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #1a1a2e 30%, #16213e 100%);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    position: relative;
+    margin-top: 50px; /* Agrega espacio desde la parte superior */
+}
+
+.heart {
+    width: 120px;
+    height: 120px;
+    background-color: #ff4d6d;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 25px #ff4d6d, 0 0 50px #ff4d6d;
+    animation: heartbeat 1.2s infinite alternate ease-in-out;
+    margin-bottom: 20px; /* Espacio entre el corazón y el texto "Para alguien muy especial" */
+}
+
+.heart::before, .heart::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background-color: #ff4d6d;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 25px #ff4d6d, 0 0 50px #ff4d6d;
+}
+
+.heart::before {
+    top: -60px;
+    left: 0;
+}
+
+.heart::after {
+    left: 60px;
+    top: 0;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.2) rotate(-45deg); }
+    100% { transform: scale(1) rotate(-45deg); }
+}
+
+.dedication {
+    margin-top: 10px; /* Espacio entre el texto y el corazón */
+    font-size: 20px;
+    color: #ff4d6d;
+    text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d;
+}
+
+.dedication-text {
+    margin-top: 30px; /* Espacio entre el texto "Para alguien muy especial" y el párrafo largo */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #FFD700; /* Color dorado */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700; /* Brillo dorado */
+    max-width: 80%; /* Ajusta el ancho máximo del texto */
+    margin-left: auto;
+    margin-right: auto;
+}
